@@ -1,0 +1,122 @@
+\hypertarget{shell_8h}{}\section{shell.\+h File Reference}
+\label{shell_8h}\index{shell.\+h@{shell.\+h}}
+
+
+Execution functions and structs representing shell commands.  
+
+
+{\ttfamily \#include $<$apr-\/1/apr\+\_\+thread\+\_\+proc.\+h$>$}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structShell}{Shell}
+\begin{DoxyCompactList}\small\item\em Represents a shell command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{shell_8h_a0ad0666a1726541270e5b2a3594f242c}{}\#define \hyperlink{shell_8h_a0ad0666a1726541270e5b2a3594f242c}{M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+A\+R\+G\+S}~100\label{shell_8h_a0ad0666a1726541270e5b2a3594f242c}
+
+\begin{DoxyCompactList}\small\item\em 1 greater than the maximum amount of arguments in a \hyperlink{structShell}{Shell}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{shell_8h_a5a458a7123d8cffb7cb2fce306bad661}{}typedef struct \hyperlink{structShell}{Shell} \hyperlink{shell_8h_a5a458a7123d8cffb7cb2fce306bad661}{Shell}\label{shell_8h_a5a458a7123d8cffb7cb2fce306bad661}
+
+\begin{DoxyCompactList}\small\item\em Represents a shell command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{shell_8h_acda27d63b5d5da99f9b12d52f376b006}{Shell\+\_\+run} (apr\+\_\+pool\+\_\+t $\ast$p, \hyperlink{structShell}{Shell} $\ast$cmd)
+\begin{DoxyCompactList}\small\item\em Runs a \hyperlink{structShell}{Shell} command. \end{DoxyCompactList}\item 
+int \hyperlink{shell_8h_aff9ad8e697131563bcb0071b242a338d}{Shell\+\_\+exec} (\hyperlink{structShell}{Shell} template,...)
+\begin{DoxyCompactList}\small\item\em Executes one of the extern Shells in \hyperlink{shell_8h}{shell.\+h}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{shell_8h_ac8575ca18e0cd8a397ecf8703d0a1e2e}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_ac8575ca18e0cd8a397ecf8703d0a1e2e}{C\+L\+E\+A\+N\+U\+P\+\_\+\+S\+H}\label{shell_8h_ac8575ca18e0cd8a397ecf8703d0a1e2e}
+
+\begin{DoxyCompactList}\small\item\em Cleanup command. \end{DoxyCompactList}\item 
+\hypertarget{shell_8h_a16b33613717f72f8845944f362a8e92f}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_a16b33613717f72f8845944f362a8e92f}{G\+I\+T\+\_\+\+S\+H}\label{shell_8h_a16b33613717f72f8845944f362a8e92f}
+
+\begin{DoxyCompactList}\small\item\em Git clone command, for fetching projects. \end{DoxyCompactList}\item 
+\hypertarget{shell_8h_a00760be33a4083c2144658e3e0432ba8}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_a00760be33a4083c2144658e3e0432ba8}{T\+A\+R\+\_\+\+S\+H}\label{shell_8h_a00760be33a4083c2144658e3e0432ba8}
+
+\begin{DoxyCompactList}\small\item\em Untar command, for untarring fetched projects. \end{DoxyCompactList}\item 
+\hypertarget{shell_8h_a346ec2013949bbb903b144afbea185a7}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_a346ec2013949bbb903b144afbea185a7}{C\+U\+R\+L\+\_\+\+S\+H}\label{shell_8h_a346ec2013949bbb903b144afbea185a7}
+
+\begin{DoxyCompactList}\small\item\em Curl, for fetching projects. \end{DoxyCompactList}\item 
+\hypertarget{shell_8h_a0b00c62afcd9cbe9ddcafd077958746e}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_a0b00c62afcd9cbe9ddcafd077958746e}{C\+O\+N\+F\+I\+G\+U\+R\+E\+\_\+\+S\+H}\label{shell_8h_a0b00c62afcd9cbe9ddcafd077958746e}
+
+\begin{DoxyCompactList}\small\item\em Configure, for the configure script in C projects. \end{DoxyCompactList}\item 
+\hypertarget{shell_8h_a5b265c6270c71a773cc4af9e3ced813a}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_a5b265c6270c71a773cc4af9e3ced813a}{M\+A\+K\+E\+\_\+\+S\+H}\label{shell_8h_a5b265c6270c71a773cc4af9e3ced813a}
+
+\begin{DoxyCompactList}\small\item\em Make, for building the project\textquotesingle{}s source code. \end{DoxyCompactList}\item 
+\hypertarget{shell_8h_a237379db14a3952deeb7e942a49e4e2b}{}\hyperlink{structShell}{Shell} \hyperlink{shell_8h_a237379db14a3952deeb7e942a49e4e2b}{I\+N\+S\+T\+A\+L\+L\+\_\+\+S\+H}\label{shell_8h_a237379db14a3952deeb7e942a49e4e2b}
+
+\begin{DoxyCompactList}\small\item\em Make install, for installing the built source code. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Execution functions and structs representing shell commands. 
+
+
+
+\subsection{Function Documentation}
+\hypertarget{shell_8h_aff9ad8e697131563bcb0071b242a338d}{}\index{shell.\+h@{shell.\+h}!Shell\+\_\+exec@{Shell\+\_\+exec}}
+\index{Shell\+\_\+exec@{Shell\+\_\+exec}!shell.\+h@{shell.\+h}}
+\subsubsection[{Shell\+\_\+exec}]{\setlength{\rightskip}{0pt plus 5cm}int Shell\+\_\+exec (
+\begin{DoxyParamCaption}
+\item[{{\bf Shell}}]{template, }
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\label{shell_8h_aff9ad8e697131563bcb0071b242a338d}
+
+
+Executes one of the extern Shells in \hyperlink{shell_8h}{shell.\+h}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em template} & Extern \hyperlink{structShell}{Shell} to be executed, probably with A\+L\+L-\/\+C\+A\+P\+S arguments that are to be replaced. \\
+\hline
+{\em ...} & Key-\/value pairs of arguments to be replaced.
+
+Example\+: 
+\begin{DoxyCode}
+\textcolor{keywordtype}{int} rc = \hyperlink{shell_8h_aff9ad8e697131563bcb0071b242a338d}{Shell\_exec}(CURL\_SH,
+                   \textcolor{stringliteral}{"TARGET"}, /tmp/curlable\_project,
+                   \textcolor{stringliteral}{"URL"}, https:\textcolor{comment}{//project/that/can/be/curled);}
+
+\textcolor{keywordflow}{if}(rc == -1) \{
+    \textcolor{comment}{// Handle execution failure...}
+\}
+\end{DoxyCode}
+ \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+0 on successful \hyperlink{structShell}{Shell} run. -\/1 if error occurred. 
+\end{DoxyReturn}
+\hypertarget{shell_8h_acda27d63b5d5da99f9b12d52f376b006}{}\index{shell.\+h@{shell.\+h}!Shell\+\_\+run@{Shell\+\_\+run}}
+\index{Shell\+\_\+run@{Shell\+\_\+run}!shell.\+h@{shell.\+h}}
+\subsubsection[{Shell\+\_\+run}]{\setlength{\rightskip}{0pt plus 5cm}int Shell\+\_\+run (
+\begin{DoxyParamCaption}
+\item[{apr\+\_\+pool\+\_\+t $\ast$}]{p, }
+\item[{{\bf Shell} $\ast$}]{cmd}
+\end{DoxyParamCaption}
+)}\label{shell_8h_acda27d63b5d5da99f9b12d52f376b006}
+
+
+Runs a \hyperlink{structShell}{Shell} command. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Apr memory pool to use. \\
+\hline
+{\em cmd} & \hyperlink{structShell}{Shell} to run.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+0 on successful \hyperlink{structShell}{Shell} run. -\/1 if error occurred. 
+\end{DoxyReturn}

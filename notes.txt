@@ -1,0 +1,3 @@
+1. Db_find: db.c, 60
+The binstr function call used to check if url is contained in the database.
+Could be optimized into checking each line of the database for equality to url.

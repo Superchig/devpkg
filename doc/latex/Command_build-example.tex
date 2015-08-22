@@ -1,0 +1,26 @@
+\hypertarget{Command_build-example}{}\section{Command\+\_\+build}
+Builds the already downloaded C project. \begin{DoxyParagraph}{Warning}
+Builds the C project already downloaded, not necessarily url.
+\end{DoxyParagraph}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The apr memory pool to be used. \\
+\hline
+{\em url} & The url to be added to D\+B\+\_\+\+F\+I\+L\+E \\
+\hline
+{\em configure\+\_\+opts} & Options to be passed to the configure script. \\
+\hline
+{\em make\+\_\+opts} & Options to be passed to make. \\
+\hline
+{\em install\+\_\+opts} & Options to be passed to make install.\\
+\hline
+\end{DoxyParams}
+(p, \char`\"{}https\+://foo/bar.\+git\char`\"{});
+
+\begin{DoxyReturn}{Returns}
+0 if successful. -\/1 on error.
+\end{DoxyReturn}
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 

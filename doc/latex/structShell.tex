@@ -1,0 +1,61 @@
+\hypertarget{structShell}{}\section{Shell Struct Reference}
+\label{structShell}\index{Shell@{Shell}}
+
+
+Represents a shell command.  
+
+
+
+
+{\ttfamily \#include $<$shell.\+h$>$}
+
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{structShell_af7f22d5f2b77da8d116c3c56799da8df}{}const char $\ast$ \hyperlink{structShell_af7f22d5f2b77da8d116c3c56799da8df}{dir}\label{structShell_af7f22d5f2b77da8d116c3c56799da8df}
+
+\begin{DoxyCompactList}\small\item\em Directory to begin execution in. \end{DoxyCompactList}\item 
+\hypertarget{structShell_aa383471cfa47390f167c9ccf20f96b1b}{}const char $\ast$ \hyperlink{structShell_aa383471cfa47390f167c9ccf20f96b1b}{exe}\label{structShell_aa383471cfa47390f167c9ccf20f96b1b}
+
+\begin{DoxyCompactList}\small\item\em Name of executable. \end{DoxyCompactList}\item 
+\hypertarget{structShell_ac69162f44ce6c9a5b1e942d59a0f564e}{}apr\+\_\+procattr\+\_\+t $\ast$ \hyperlink{structShell_ac69162f44ce6c9a5b1e942d59a0f564e}{attr}\label{structShell_ac69162f44ce6c9a5b1e942d59a0f564e}
+
+\begin{DoxyCompactList}\small\item\em Command\textquotesingle{}s attributes, which mainly contains options for I\+O. \end{DoxyCompactList}\item 
+\hypertarget{structShell_ab344de6664e18cea93fac216148cda0e}{}apr\+\_\+proc\+\_\+t \hyperlink{structShell_ab344de6664e18cea93fac216148cda0e}{proc}\label{structShell_ab344de6664e18cea93fac216148cda0e}
+
+\begin{DoxyCompactList}\small\item\em Process to run. \end{DoxyCompactList}\item 
+\hypertarget{structShell_a4d87736ab735660ffdc6addc55cda406}{}apr\+\_\+exit\+\_\+why\+\_\+e \hyperlink{structShell_a4d87736ab735660ffdc6addc55cda406}{exit\+\_\+why}\label{structShell_a4d87736ab735660ffdc6addc55cda406}
+
+\begin{DoxyCompactList}\small\item\em Why the command exited. \end{DoxyCompactList}\item 
+\hypertarget{structShell_a6d3a37fb42f08d96c562d7d05eacd293}{}int \hyperlink{structShell_a6d3a37fb42f08d96c562d7d05eacd293}{exit\+\_\+code}\label{structShell_a6d3a37fb42f08d96c562d7d05eacd293}
+
+\begin{DoxyCompactList}\small\item\em Exit code. \end{DoxyCompactList}\item 
+\hypertarget{structShell_af96a946fda6d42272f3922506300b470}{}int \hyperlink{structShell_af96a946fda6d42272f3922506300b470}{args\+\_\+repl}\label{structShell_af96a946fda6d42272f3922506300b470}
+
+\begin{DoxyCompactList}\small\item\em Number of arguments that should be replaced. \end{DoxyCompactList}\item 
+const char $\ast$ \hyperlink{structShell_a5c11ff22f0e7d22527ce3f40812adb2c}{args} \mbox{[}\hyperlink{shell_8h_a0ad0666a1726541270e5b2a3594f242c}{M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+A\+R\+G\+S}\mbox{]}
+\begin{DoxyCompactList}\small\item\em N\+U\+L\+L-\/terminated array of arguments. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a shell command. 
+
+\subsection{Field Documentation}
+\hypertarget{structShell_a5c11ff22f0e7d22527ce3f40812adb2c}{}\index{Shell@{Shell}!args@{args}}
+\index{args@{args}!Shell@{Shell}}
+\subsubsection[{args}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Shell\+::args\mbox{[}{\bf M\+A\+X\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+A\+R\+G\+S}\mbox{]}}\label{structShell_a5c11ff22f0e7d22527ce3f40812adb2c}
+
+
+N\+U\+L\+L-\/terminated array of arguments. 
+
+Arguments that should be replaced are in all caps.
+
+Example\+: 
+\begin{DoxyCode}
+\{\textcolor{stringliteral}{"echo"}, \textcolor{stringliteral}{"-e"}, \textcolor{stringliteral}{"MSG"}, NULL\}
+\end{DoxyCode}
+ 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{shell_8h}{shell.\+h}\end{DoxyCompactItemize}

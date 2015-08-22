@@ -1,0 +1,23 @@
+\hypertarget{Command_fetch-example}{}\section{Command\+\_\+fetch}
+Downloads a project either through git or curl, and then untars it if needed. 
+\begin{DoxyParams}{Parameters}
+{\em p} & The apr memory pool to be used. \\
+\hline
+{\em url} & The url of the project to be fetched. \\
+\hline
+{\em fetch\+\_\+only} & Whether or not to only fetch dependencies. 0 to fetch dependencies. 1 to {\itshape not} fetch dependencies. \\
+\hline
+\end{DoxyParams}
+
+
+\begin{DoxyReturn}{Returns}
+0 if nothing additional should be done. 1 if the project needs to be installed. -\/1 if an error occurred. 
+\end{DoxyReturn}
+
+
+(p, \char`\"{}https\+://github.\+com/foo/bar.\+git\char`\"{})
+
+
+\begin{DoxyCodeInclude}
+\end{DoxyCodeInclude}
+ 
