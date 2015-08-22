@@ -19,7 +19,7 @@ Git clone the repository.
   - Installs a piece of software from a URL.
 - devpkg -L
   - Lists all software that's been installed.
-- devpkg -F
+- devpkg -F [url]
   - Fetches some source code for manual building
 - devpkg -B {-i install\_opts, -m make\_opts, -c config\_opts}
   - Builds fetched source code and installs it, even if already installed.
