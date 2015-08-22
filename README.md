@@ -12,7 +12,6 @@ Git clone the repository.
 {argument1, argument2, argument3, ...} => these arguments are optional.
 
 ### Options
-
 - devpkg -S
   - Sets up the database file.
 - devpkg -I [url] {-i install\_opts, -m make\_opts, -c config\_opts}
