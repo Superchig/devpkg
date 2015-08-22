@@ -82,6 +82,7 @@ int main(int argc, const char *argv[])
 	switch(request) {
 	case COMMAND_INSTALL:
 		check(url, "You must at least give a URL.");
+		Command_install(p, url, config_opts, make_opts, install_opts);
 		break;
 
 	case COMMAND_LIST:

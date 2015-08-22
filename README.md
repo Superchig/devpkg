@@ -5,13 +5,20 @@ This is a work in progress. Part of Zed's excellent [Learn C the Hard Way](http:
 Git clone the repository.
 
 ## Command-line Options
+
+### Key
+[argument] => argument is a necessary argument.
+{argument1, argument2, argument3, ...} => these arguments are optional.
+
+### Options
+
 - devpkg -S
-  - Sets up a new install on a computer.
-- devpkg -I
+  - Sets up the database file.
+- devpkg -I [url] {-i install\_opts, -m make\_opts, -c config\_opts}
   - Installs a piece of software from a URL.
 - devpkg -L
   - Lists all software that's been installed.
 - devpkg -F
   - Fetches some source code for manual building
-- devpkg -B
+- devpkg -B {-i install\_opts, -m make\_opts, -c config\_opts}
   - Builds fetched source code and installs it, even if already installed.
