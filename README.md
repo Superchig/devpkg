@@ -8,6 +8,7 @@ Git clone the repository.
 
 ### Key
 [argument] => argument is a necessary argument.
+
 {argument1, argument2, argument3, ...} => these arguments are optional.
 
 ### Options
